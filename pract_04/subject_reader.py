@@ -17,8 +17,13 @@ def get_data():
         print(parts)  # See what the parts look like (notice the integer is a string)
         parts[2] = int(parts[2])  # Make the number an integer (ignore PyCharm's warning)
         print(parts)  # See if that worked
+        statement(parts[0], parts[1], parts[2])
         print("----------")
+
     input_file.close()
+
+def statement(a, b, c):
+    print("{} is taught by {} and has {} students".format(a, b, c))
 
 
 main()
